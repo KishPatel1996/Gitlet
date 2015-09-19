@@ -1,0 +1,30 @@
+Gitlet design structure:
+
+Gitlet commands to implement:
+  init
+  add
+  commit
+  rm
+  log
+  find
+  status
+  checkout
+    checkout file name
+    checkout commit id file name
+    checkout branch name
+  branch
+  rm-branch
+  reset
+  merge
+  rebase
+  i-rebase
+
+
+General Idea:
+Gitlet will have different 64-character commits folders, which each store the files commited in each commit.
+
+Head.ser will contain most of the other information.
+Information on current branch, such as id, staged files,inherited and unchanged files.
+Look into Sets and hashmaps for this
+
+Ask AC and Ani
